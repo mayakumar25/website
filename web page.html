@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(45deg, hwb(12 89% 9%), #f6f7f6dc);
+            color: white;
+        }
+        
+        header {
+            background: #0f111350;
+            background-image: url('img.jpg'); 
+            padding: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: whitesmoke;
+            color: rgb(12, 11, 11);
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #f1eee8;
+            transform: scale(1.1);
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            animation: slideUp 1s ease-in-out;
+        }
+        #about {
+            background: #e0dcdc;
+            color: #0f0f0f;
+            position: relative;
+            overflow: hidden;
+        }
+        #about h2, #highlights h2 ,#qualifications h2 ,  #apply h2{
+            display: inline-block;
+            animation: jumpText 1.5s infinite alternate ease-in-out;
+        }
+        @keyframes jumpText {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        #highlights {
+            background: #e0dcdc;
+            color: #1a1919;
+            position: relative;
+            overflow: hidden;
+        }
+        #qualifications { background:#e0dcdc; color: rgb(14, 13, 13); 
+          
+        }
+        #apply { background:#e0dcdc; color: rgb(15, 15, 15); }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e0dcdc;
+            color: rgb(12, 11, 11);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .highlighted {
+            background-color: rgba(151, 151, 79, 0.082) !important;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        form input, button {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-color: #e4e9e9;
+            color: rgb(15, 14, 14);
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #030303;
+            transform: scale(1.05);
+        }
+        footer {
+            background: #d4d4d8;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+    footer p {
+        color: black !important;
+    }
+
+
+        .social-icons a {
+            color: rgb(39, 38, 38);
+            margin: 0 10px;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.3);
+            color: #141414;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+        <p>Join our internship program to gain real-world experience and mentorship. Duration: 3 months.</p>
+        <a href="#apply" class="cta-button">Apply Now</a>
+    </header>
+    
+    <section id="about">
+        <h2>About the Internship</h2>
+        <p>Our internship program provides hands-on experience, allowing you to work on live projects under expert guidance.</p>
+    </section>
+    
+    <section id="highlights">
+        <h2>Internship Highlights</h2>
+        <ul>
+            <li>Real-world experience with live projects.</li>
+            <li>Mentorship from industry professionals.</li>
+            <li>Flexible remote or on-site options.</li>
+            <li>Certificate of completion.</li>
+            <li>Potential for full-time placement.</li>
+        </ul>
+    </section>
+    
+    <section id="qualifications">
+        <h2>Qualifications & Skills</h2>
+        <ul>
+            <li>Basic knowledge of HTML, CSS, and JavaScript.</li>
+            <li>Familiarity with front-end frameworks (React, Angular, or Vue.js) is a plus.</li>
+            <li>Understanding of back-end technologies (Node.js, PHP, or Python) is beneficial.</li>
+            <li>Strong problem-solving skills and eagerness to learn.</li>
+        </ul>
+    </section>
+    
+    <section id="apply">
+        <h2>Apply Now</h2>
+        <p>Fill out the form below to kickstart your journey.</p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="file" required>
+            <a href="#submit" class="cta-button">Submit</a>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Cognifyz Technologies. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@cognifyz.com">info@cognifyz.com</a> | Phone: 9361655536</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function addHighlighting(sectionId) {
+                const listItems = document.querySelectorAll(`#${sectionId} ul li`);
+    
+                listItems.forEach(item => {
+                    item.addEventListener("click", function () {
+                        // Remove highlight from all items in this section
+                        listItems.forEach(li => li.classList.remove("highlighted"));
+    
+                        // Add highlight to the clicked item
+                        this.classList.add("highlighted");
+                    });
+                });
+            }
+    
+            // Apply to both sections
+            addHighlighting("highlights");
+            addHighlighting("qualifications");
+        });
+    </script>
+    
+    <style>
+        .highlighted {
+            background-color: rgb(189, 189, 181) !important;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+    </style>
+</body>
+</html>
